@@ -1,0 +1,88 @@
+* {box-sizing: border-box;
+margin: 0px;
+padding: 0px;}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 30px;
+}
+
+
+.nav-bar {
+    height: 60px;
+    background: navy;
+    color: white;
+    font-weight: bold;
+}
+.nav-bar .container {
+    height: 100%;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    margin-left: 10px;
+
+}
+
+a:hover {
+    color: aqua;
+}
+
+.bio {
+    background: navy;
+    color: white;
+    margin-top: 30;
+    padding-top: 30;
+}
+
+.bioi img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+
+.info .container {
+    flex-direction: column;
+    max-width: 1400px;
+    margin: 0px auto;
+    padding: 0px 30px;
+
+}
+
+
+
+.cards {display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    flex: 1;
+    padding-left: 20px;
+}
+.card img {
+    max-width: 100%;
+    border-radius: 20px;
+}
+
+@media(max-width:768px) {
+    .bio .container {
+       flex-direction: column;
+       padding-top: 20px;
+        align-items: center;
+    }
+
+    .cards {
+        display: block;
+        text-align: center
+    }
+}
